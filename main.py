@@ -44,7 +44,7 @@ def main():
 
     # 启动 FRP 客户端，并将输出重定向到日志文件
     with open("logs.txt", "w") as logs:
-        subprocess.Popen([frpc_executable_path, "-c", config_file_path], stdout=logs, stderr=subprocess.STDOUT)
+        subprocess.Popen([frpc_executable_path, "-c", config_file_path], stdout=logs, stderr=logs)
     print(f"FRP 客户端已启动，配置文件路径: {config_file_path}")
 
 if __name__ == "__main__":
