@@ -40,7 +40,7 @@ def main():
         config_file.write(  create_frpc_config_toml(args.local_port, args.remote_port))
 
     # 修改为你的 FRP 可执行文件路径
-    frpc_executable_path = "./frpc.exe"
+    frpc_executable_path = "./frpc"
 
     # 启动 FRP 客户端，并将输出重定向到日志文件
     with open("logs.txt", "w") as logs:
