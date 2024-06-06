@@ -104,7 +104,7 @@ def insert_data(html_data):
 
 
 
-for item in range(970309, 1069541):
+for item in range(1069541, 1169541):
     print(item)
     #http://gjcxcy.bjtu.edu.cn/NewLXItemListForStudentDetail.aspx?ItemNo=1069541&IsLXItem=1
     base_url = f"http://gjcxcy.bjtu.edu.cn/NewLXItemListForStudentDetail.aspx?ItemNo={item}&IsLXItem=1"
