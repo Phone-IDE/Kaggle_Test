@@ -104,13 +104,13 @@ def insert_data(html_data):
 
 
 
-for item in range(569541, 669541):
+for item in range(169541, 269541):
     print(item)
     #http://gjcxcy.bjtu.edu.cn/NewLXItemListForStudentDetail.aspx?ItemNo=1069541&IsLXItem=1
     base_url = f"http://gjcxcy.bjtu.edu.cn/NewLXItemListForStudentDetail.aspx?ItemNo={item}&IsLXItem=1"
     response = requests.get(base_url,headers={'User-Agent':'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'})
     insert_data(response.text)
-    time.sleep(1)
+    time.sleep(5)
 
 
 
